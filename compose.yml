@@ -3,12 +3,12 @@ version: "3"
 services:
  devopsdb:
    container_name: devopsdb
-   image: susmitha756/susmi:dbimage
+   image: prasa239/vana:db-image
    ports:
      - "3306:3306"
 
  application:
-   image: susmitha756/susmi:appimage
+   image: prasa239/vana:app-image
    container_name: appcontainer
    ports:
      - "1234:8080"
